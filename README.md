@@ -22,11 +22,14 @@ uxr-ai-infrastructure-starter/
 ├── workflows/
 │   └── synthesis-workflow.md
 ├── templates/
+│   ├── research-memory-blueprint.md
 │   └── research-readout.md
 ├── decisions/
 │   └── decision-log.md
-└── archive/
-    └── README.md
+├── archive/
+│   └── README.md
+└── docs/
+    └── github-lite.md
 ```
 
 The example organization is **Cyberdyne Systems**, a fictional course case. The files are synthetic and exist only to demonstrate infrastructure patterns.
@@ -47,12 +50,16 @@ If you *do* use GitHub, this repository is also a small example of versioned res
 
 The point is not Git itself. The point is to make consequential changes visible, reviewable, and reversible.
 
+If you want the non-scary version first, read [`docs/github-lite.md`](docs/github-lite.md). Pull request [#1](../../pull/1) is an intentionally small live example of **branch → commit → diff → review → merge**.
+
 ## How to use this starter
 
 1. Browse the repository before changing anything.
 2. Choose the smallest scope you actually need: a recurring workflow, a research project, a team library, or another bounded system.
 3. Keep only the structure that helps people find, trust, reuse, and maintain the work.
 4. Use the lightest versioning system that preserves the history and accountability your workflow needs.
+
+If you want to design your own structure first, start with [`templates/research-memory-blueprint.md`](templates/research-memory-blueprint.md).
 
 ## Public-repository safety boundary
 
