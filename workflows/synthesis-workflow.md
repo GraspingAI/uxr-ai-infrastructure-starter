@@ -20,9 +20,21 @@ Create a first-pass synthesis from approved research material while keeping sour
 1. Confirm which sources are in scope.
 2. Separate direct evidence, researcher inference, and stakeholder assumptions.
 3. Ask the AI system to organize patterns and tensions without resolving uncertainty on its own.
-4. Trace consequential candidate findings back to source IDs.
-5. Review the candidate synthesis manually before it is treated as a reviewed output.
-6. Record open questions, contradictory evidence, and missing support.
+4. **Run a contradiction pass before writing the dominant story.** List evidence that weakens, complicates, or conflicts with each candidate pattern.
+5. Trace consequential candidate findings back to source IDs.
+6. Review the candidate synthesis manually before it is treated as a reviewed output.
+7. Record open questions, contradictory evidence, and missing support.
+
+## Contradiction pass
+
+For each candidate finding, ask:
+
+- What evidence points in the other direction?
+- Is the apparent pattern driven by only one participant, segment, or source?
+- Are we treating absence of evidence as agreement?
+- Would the claim need to become narrower if the conflicting evidence were shown next to it?
+
+Do not force contradictions into a single resolved narrative. Preserve disagreement when the evidence warrants it.
 
 ## Output standard
 
