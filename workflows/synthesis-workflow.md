@@ -2,7 +2,7 @@
 
 **Status:** Current  
 **Owner:** Cyberdyne Research  
-**Last updated:** 2026-08-24  
+**Last updated:** 2026-08-25  
 **Change rule:** Proposed changes should explain what problem they are solving and should be reviewed before becoming the shared default.
 
 ## Purpose
@@ -20,14 +20,14 @@ Create a first-pass synthesis from approved research material while keeping sour
 1. Confirm which sources are in scope.
 2. Separate direct evidence, researcher inference, and stakeholder assumptions.
 3. Ask the AI system to organize patterns and tensions without resolving uncertainty on its own.
-4. **Run a contradiction pass before writing the dominant story.** List evidence that weakens, complicates, or conflicts with each candidate pattern.
-5. Trace consequential candidate findings back to source IDs.
-6. Review the candidate synthesis manually before it is treated as a reviewed output.
+4. **Run a contradiction pass before writing the dominant story.** List evidence that weakens, complicates, or conflicts with each proposed pattern.
+5. Trace consequential claims in the AI output back to source IDs.
+6. Review the AI output manually before any claim is treated as a reviewed finding.
 7. Record open questions, contradictory evidence, and missing support.
 
 ## Contradiction pass
 
-For each candidate finding, ask:
+For each consequential pattern in the AI output, ask:
 
 - What evidence points in the other direction?
 - Is the apparent pattern driven by only one participant, segment, or source?
