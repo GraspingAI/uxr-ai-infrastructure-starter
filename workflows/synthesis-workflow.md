@@ -1,8 +1,8 @@
 # Synthesis Workflow
 
-**Status:** Current  
+**State:** Current  
 **Owner:** Cyberdyne Research  
-**Last updated:** 2026-08-25  
+**Last updated:** 2026-08-26  
 **Change rule:** Proposed changes should explain what problem they are solving and should be reviewed before becoming the shared default.
 
 ## Purpose
@@ -44,17 +44,18 @@ A synthesis should make it possible to distinguish:
 - what pattern the researcher is inferring;
 - where evidence disagrees;
 - what remains uncertain;
-- which sources support consequential claims.
+- which sources support consequential claims;
+- what remains AI output versus what has become a reviewed finding.
 
 ## Stop conditions
 
 Stop and return to the source material when:
 
 - a consequential claim cannot be traced to evidence;
-- a source is missing or its status is unclear;
+- a source is missing or its state is unclear;
 - contradictory evidence has been flattened into a single story;
 - the request requires a decision the available evidence cannot support.
 
 ## What this workflow does not do
 
-It does not decide which findings should ship, replace researcher review, or turn generated language into evidence.
+It does not decide which claims are warranted, replace researcher review, or turn AI-generated language into evidence.
