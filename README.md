@@ -13,7 +13,7 @@ The course uses four practical jobs for research memory:
 - **Reuse** — Can they tell what can carry forward, and how?
 - **Maintain** — Can someone update, supersede, or retire it without creating confusion?
 
-A useful memory system does not make an artifact trustworthy. It makes the conditions for judgment visible.
+A useful memory system does not decide whether an artifact is warranted. It makes the conditions for judgment visible.
 
 ## What is in this repository?
 
