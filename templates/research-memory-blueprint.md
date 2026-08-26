@@ -1,32 +1,38 @@
 # Research Memory Blueprint v0.1
 
-Use this to design the smallest research-memory system that is actually worth maintaining.
+Use this to design the smallest piece of research memory that is actually worth maintaining.
 
-## Scope
+## User goal
 
-What practice, project, workflow, team, or domain does this cover?
+What should another researcher be able to do without asking you to explain the backstory?
 
 ## Canonical home
 
-Where should someone start when they need the current, trustworthy version of the work?
+Where should someone start when they need the current version intended for normal use?
 
 ## Structure
 
 What types of material need to remain distinguishable?
 
-Examples: source material, context, active workflows, reusable templates, generated working material, reviewed outputs, decisions, archived or superseded material.
+Examples: source material, context, active workflows, reusable templates, AI outputs, reviewed findings, decisions, and superseded material.
 
-## Status + versioning rule
+## State + versioning rule
 
-How will someone know what is current, draft, experimental, reviewed, or superseded?
+How will someone know what is **current**, **draft / experimental**, or **superseded**?
 
 What is the lightest versioning system that preserves the history you actually need?
 
-## Traceability rule
+## Provenance + traceability
 
-What must point back to what?
+What needs to stay linked so someone can see where an artifact came from and what review happened?
 
-For example: consequential claim → reviewed synthesis → source evidence.
+For example: source → AI output → review → finding → decision.
+
+## Permitted use
+
+What should remain visible about how this material may be used?
+
+Who may see or share it? What may be reused? May it go into an AI system?
 
 ## Ownership + maintenance
 
@@ -34,13 +40,21 @@ Who owns keeping this useful?
 
 What should trigger review, revision, or retirement?
 
+## Cold test
+
+Give it to another researcher without explanation. Where would they hesitate, choose the wrong thing, or need to ask you what something means?
+
 ---
 
 ### Quick test
 
 Six months from now, can someone:
 
-- **Find** the right thing?
-- **Trust** what it is and where it came from?
-- **Reuse** what was meant to persist?
-- **Maintain** it as the work changes?
+- **Find** the right or current thing?
+- **Understand** what it is, where it came from, and what state it is in?
+- **Reuse** what was meant to carry forward, in the intended way?
+- **Maintain** it as the work changes, including superseding or retiring it clearly?
+
+Finish the sentence:
+
+> When research work persists, __________________ must stay visible so that __________________.

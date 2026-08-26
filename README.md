@@ -4,12 +4,16 @@ A small, public example of what maintainable AI-enabled UX research infrastructu
 
 Created by **GraspingAI** for the UXR Institute course **Beyond Prompting: Building AI Infrastructure for UX Research**.
 
-This is **not a prompt library** and not a prescription for how every research team should organize its work. It is a fictional, deliberately lightweight example for exploring four practical questions:
+This is **not a prompt library** and not a prescription for how every research team should organize its work. It is a fictional, deliberately lightweight example of research memory: the maintained context around research work that lets someone else, later, understand and use it without reconstructing the backstory.
 
-- **Find** — Can the next researcher locate the right thing?
-- **Trust** — Can they tell what it is, where it came from, and whether it is current?
-- **Reuse** — Can useful context, workflows, and templates survive beyond one chat or project?
-- **Maintain** — Is ownership, change, review, and retirement visible?
+The course uses four practical jobs for research memory:
+
+- **Find** — Can the next researcher get to the right or current thing?
+- **Understand** — Can they see what it is, where it came from, and what state it is in?
+- **Reuse** — Can they tell what can carry forward, and how?
+- **Maintain** — Can someone update, supersede, or retire it without creating confusion?
+
+A useful memory system does not make an artifact trustworthy. It makes the conditions for judgment visible.
 
 ## What is in this repository?
 
@@ -42,8 +46,8 @@ If you *do* use GitHub, this repository is also a small example of versioned res
 
 ### The basic versioning model
 
-- **Main** — the version people should currently rely on.
-- **Branch** — a safe line of change that does not disturb the current version.
+- **Main** — the shared version currently designated for normal use.
+- **Branch** — a safe line of change that does not disturb the current shared version.
 - **Commit** — a meaningful checkpoint with a short explanation of what changed and why.
 - **Diff** — the exact change between versions.
 - **Review / merge** — the decision to incorporate a proposed change into the shared version.
@@ -56,8 +60,9 @@ If you want the non-scary version first, read [`docs/github-lite.md`](docs/githu
 
 1. Browse the repository before changing anything.
 2. Choose the smallest scope you actually need: a recurring workflow, a research project, a team library, or another bounded system.
-3. Keep only the structure that helps people find, trust, reuse, and maintain the work.
-4. Use the lightest versioning system that preserves the history and accountability your workflow needs.
+3. Keep only the structure that helps people **find, understand, reuse, and maintain** the work.
+4. Make state, provenance, permitted use, and ownership visible where they affect how an artifact should be handled.
+5. Use the lightest versioning system that preserves the history and accountability your workflow needs.
 
 If you want to design your own structure first, start with [`templates/research-memory-blueprint.md`](templates/research-memory-blueprint.md).
 
@@ -74,14 +79,15 @@ If you want to experiment publicly, use the supplied fictional material or your 
 A useful research-memory system should make it possible for someone to answer questions such as:
 
 - What is this artifact?
-- Why was it created?
-- What source material does it depend on?
-- Is it source material, AI-generated working material, reviewed output, or a decision record?
+- What role does it play: source, AI output, reviewed finding, decision record, or something else?
+- What state is it in: current, draft / experimental, or superseded?
+- Where did it come from, who or what produced it, and what review happened?
 - Who owns it?
+- What am I permitted to do with it: view, share, reuse, or put into an AI system?
 - What changed?
-- Which version should be used?
+- Which version should be used now?
 - What has been superseded?
-- What can safely be reused?
+- What links preserve the path from source → AI output → review → finding → decision?
 
 The exact folder names matter less than whether the system preserves those relationships.
 

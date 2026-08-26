@@ -2,7 +2,7 @@
 
 Thanks for helping improve this public learning resource.
 
-This repository is intentionally small. Contributions should make the research infrastructure easier to understand, inspect, reuse, or maintain without turning the starter into a large framework or generic prompt library.
+This repository is intentionally small. Contributions should make the research infrastructure easier to find, understand, reuse, or maintain without turning the starter into a large framework or generic prompt library.
 
 ## Before proposing a change
 
@@ -10,9 +10,10 @@ Ask:
 
 1. What problem does this change solve?
 2. Who would benefit from it?
-3. Does it preserve or improve **Find / Trust / Reuse / Maintain**?
-4. Does it introduce unnecessary complexity?
-5. Is every example safe to publish publicly?
+3. Does it preserve or improve **Find / Understand / Reuse / Maintain**?
+4. Does it keep state, provenance, permitted use, and ownership visible where they matter?
+5. Does it introduce unnecessary complexity?
+6. Is every example safe to publish publicly?
 
 ## Public-data rule
 

@@ -1,8 +1,8 @@
 # Project Context
 
-**Status:** Current example  
+**State:** Current example  
 **Owner:** Cyberdyne Research  
-**Last updated:** 2026-08-24  
+**Last updated:** 2026-08-26  
 **Review trigger:** Revisit when the research question, product scope, audience, or evidence policy materially changes.
 
 ## Scope
@@ -31,22 +31,24 @@ The researcher owns:
 - interpretation of evidence;
 - decisions about claim strength;
 - contradictory or ambiguous evidence;
-- whether AI-generated material is suitable to advance into reviewed output;
+- whether claims in an AI output are warranted enough to become reviewed findings;
 - final recommendations and limitations.
 
 ## Source rules
 
 - Important claims should be traceable to the source index and underlying approved evidence.
-- AI-generated summaries are working material, not source evidence.
+- AI outputs are working material, not source evidence.
 - If sources conflict, preserve the disagreement rather than silently reconciling it.
 - Missing evidence should remain visible as a gap.
 
-## Privacy boundary
+## Permitted use
 
-This public example contains only synthetic material. Do not add participant identifiers, raw real-world notes, confidential employer information, credentials, or proprietary research material.
+This public example contains only synthetic material and may be reused for course practice. Real research material should follow the sharing, reuse, and AI-use rules of the organization that owns it.
+
+Do not add participant identifiers, raw real-world notes, confidential employer information, credentials, or proprietary research material.
 
 ## Known limits
 
 - This context file does not contain participant-level evidence.
-- It does not establish whether a finding is current; use the source index and reviewed outputs for that.
+- It does not establish whether a finding is current; use the source index, review record, and decision log for that.
 - It should remain short enough to review before reuse.
