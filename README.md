@@ -1,21 +1,25 @@
 # UXR AI Infrastructure Starter
 
-A small, public example of what maintainable AI-enabled UX research infrastructure can look like.
+> **Module 7 worked example branch:** `example/module-7-working-kit`
 
-Created by **GraspingAI** for the UXR Institute course **Beyond Prompting: Building AI Infrastructure for UX Research**.
+This branch shows one possible answer to the final course question in **Beyond Prompting: Building AI Infrastructure for UX Research**:
 
-This is **not a prompt library** and not a prescription for how every research team should organize its work. It is a fictional, deliberately lightweight example of research memory: the maintained context around research work that lets someone else, later, understand and use it without reconstructing the backstory.
+> What is our AI strategy for research, and how do we build it sustainably?
 
-The course uses four practical jobs for research memory:
+It is intentionally small. It is **not** a canonical “complete” kit and not a prescription for how every research team should work.
 
-- **Find** — Can the next researcher get to the right or current thing?
-- **Understand** — Can they see what it is, where it came from, and what state it is in?
-- **Reuse** — Can they tell what can carry forward, and how?
-- **Maintain** — Can someone update, supersede, or retire it without creating confusion?
+## The scenario
 
-A useful memory system does not decide whether an artifact is warranted. It makes the conditions for judgment visible.
+A small fictional Cyberdyne research team wants to use AI to help turn approved research material into stakeholder-facing readouts without allowing generated language to outrun the evidence.
 
-## What is in this repository?
+The research evidence itself lives in a separate repository:
+
+**Cyberdyne Research Corpus**  
+https://github.com/GraspingAI/uxri-cyberdyne-research-corpus
+
+That separation is deliberate. The kit should know **where its sources are and what status they have** without copying every source into the infrastructure repository.
+
+## What is in this worked kit?
 
 ```text
 uxr-ai-infrastructure-starter/
@@ -24,83 +28,88 @@ uxr-ai-infrastructure-starter/
 ├── sources/
 │   └── source-index.md
 ├── workflows/
-│   └── synthesis-workflow.md
+│   ├── synthesis-workflow.md
+│   ├── planning-workflow.md
+│   └── research-readout-workflow.md
+├── docs/
+│   ├── ai-operating-principles.md
+│   ├── evidence-and-synthetic-boundaries.md
+│   ├── delegation-and-ownership.md
+│   ├── ai-strategy.md
+│   └── github-lite.md
+├── decisions/
+│   ├── decision-log.md
+│   └── first-implementation-move.md
 ├── templates/
 │   ├── research-memory-blueprint.md
 │   └── research-readout.md
-├── decisions/
-│   └── decision-log.md
-├── archive/
-│   └── README.md
-└── docs/
-    └── github-lite.md
+└── archive/
+    └── README.md
 ```
 
-The example organization is **Cyberdyne Systems**, a fictional course case. The files are synthetic and exist only to demonstrate infrastructure patterns.
+## How the course pieces show up
 
-## Start here
+| Course piece | Worked example |
+|---|---|
+| AI Operating Principle | `docs/ai-operating-principles.md` |
+| Reusable Context | `context/project-context.md` |
+| Research Memory + Workflow Library | `sources/` + `workflows/` + the external corpus |
+| Decision / Planning Workflow | `workflows/planning-workflow.md` |
+| Research Reuse + Evidence Boundaries | `workflows/research-readout-workflow.md` + `docs/evidence-and-synthetic-boundaries.md` |
+| Synthetic Research Use Spec | `docs/evidence-and-synthetic-boundaries.md` |
+| Delegation + Ownership | `docs/delegation-and-ownership.md` |
+| First Implementation Move | `decisions/first-implementation-move.md` |
 
-You do not need Git or GitHub to use the underlying ideas in this repository. The same principles can be implemented in Google Drive, Docs, Sheets, Notion, a research repository, or another system your organization already uses.
+## One workflow through the system
 
-If you *do* use GitHub, this repository is also a small example of versioned research infrastructure. You can inspect the commit history, compare changes, create a branch, or use the repository as a starting point for your own fictional practice environment.
+```text
+approved research sources
+        ↓
+AI candidate draft
+        ↓
+claim ↔ evidence check
+        ↓
+researcher approval
+        ↓
+stakeholder readout
+        ↓
+decision log
+```
 
-### The basic versioning model
+The model is only one component. The useful infrastructure is the maintained relationship among context, sources, workflow rules, review, boundaries, and ownership.
 
-- **Main** — the shared version currently designated for normal use.
-- **Branch** — a safe line of change that does not disturb the current shared version.
-- **Commit** — a meaningful checkpoint with a short explanation of what changed and why.
-- **Diff** — the exact change between versions.
-- **Review / merge** — the decision to incorporate a proposed change into the shared version.
+## Worked strategy statement
 
-The point is not Git itself. The point is to make consequential changes visible, reviewable, and reversible.
+See `docs/ai-strategy.md` for the full example. In short:
 
-If you want the non-scary version first, read [`docs/github-lite.md`](docs/github-lite.md). Pull request [#1](../../pull/1) is an intentionally small live example of **branch → commit → diff → review → merge**.
+> We use AI to help plan and draft stakeholder-facing research communication when the decision, source set, and evidence boundary are explicit, using approved indexed research material and reusable project context, with researcher review before any finding, implication, or recommendation travels. We do not use AI output or synthetic material as evidence about users, and we do not delegate final claim strength or product decisions.
 
-## How to use this starter
+## Why this is a branch
 
-1. Browse the repository before changing anything.
-2. Choose the smallest scope you actually need: a recurring workflow, a research project, a team library, or another bounded system.
-3. Keep only the structure that helps people **find, understand, reuse, and maintain** the work.
-4. Make state, provenance, permitted use, and ownership visible where they affect how an artifact should be handled.
-5. Use the lightest versioning system that preserves the history and accountability your workflow needs.
+The `main` branch remains the smaller research-memory starter used earlier in the course. This branch shows what happens when that starter is extended into a more connected working kit.
 
-If you want to design your own structure first, start with [`templates/research-memory-blueprint.md`](templates/research-memory-blueprint.md).
+That is also the versioning lesson: **main can stay stable while a branch makes a proposed change visible and reviewable.**
+
+## You do not need GitHub
+
+The same structure could live in Google Drive, Docs, Sheets, Notion, a research repository, or another approved system. The folder names are not the point.
+
+The point is whether someone can tell:
+
+- what context applies;
+- which sources are allowed and current;
+- what AI may do;
+- what a person must review;
+- what may not be claimed;
+- who owns maintenance;
+- what the team is trying first.
 
 ## Public-repository safety boundary
 
-**Do not put confidential or identifying research material into a public copy of this repository.**
+Everything in this example is fictional and synthetic.
 
-That includes participant data, raw notes or transcripts, client information, employer-confidential material, internal product plans, proprietary prompts or workflows, credentials, or other protected information.
-
-If you want to experiment publicly, use the supplied fictional material or your own synthetic examples. If you translate the structure into real work, use only systems and access controls approved by your organization.
-
-## What this is trying to model
-
-A useful research-memory system should make it possible for someone to answer questions such as:
-
-- What is this artifact?
-- What role does it play: source, AI output, reviewed finding, decision record, or something else?
-- What state is it in: current, draft / experimental, or superseded?
-- Where did it come from, who or what produced it, and what review happened?
-- Who owns it?
-- What am I permitted to do with it: view, share, reuse, or put into an AI system?
-- What changed?
-- Which version should be used now?
-- What has been superseded?
-- What links preserve the path from source → AI output → review → finding → decision?
-
-The exact folder names matter less than whether the system preserves those relationships.
-
-## License
-
-Except where otherwise noted, the original educational material in this repository is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. You may share and adapt it, including commercially, with appropriate attribution and an indication of changes.
-
-Suggested attribution: **“UXR AI Infrastructure Starter by GraspingAI, licensed CC BY 4.0.”**
-
-See `LICENSE` for details.
-
-The GraspingAI name, logos, and other trademarks are not licensed for reuse by the Creative Commons license.
+Do not put confidential or identifying research material into a public copy of this repository. Real research should use only organization-approved systems, access controls, retention practices, and AI environments.
 
 ---
 
-Built by [GraspingAI](https://www.graspingai.com/) as a public learning resource. The repository will evolve as the course develops.
+Built by [GraspingAI](https://www.graspingai.com/) for the UXR Institute course **Beyond Prompting: Building AI Infrastructure for UX Research**.
